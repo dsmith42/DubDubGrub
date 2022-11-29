@@ -26,6 +26,7 @@
 		120915512936537100CF73B3 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915502936537100CF73B3 /* MockData.swift */; };
 		120915532936602600CF73B3 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915522936602600CF73B3 /* CloudKitManager.swift */; };
 		120915562936617A00CF73B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915552936617A00CF73B3 /* Constants.swift */; };
+		12091558293665B800CF73B3 /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12091557293665B800CF73B3 /* CKRecord+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		120915502936537100CF73B3 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		120915522936602600CF73B3 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		120915552936617A00CF73B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		12091557293665B800CF73B3 /* CKRecord+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				12091541293624A300CF73B3 /* View+Ext.swift */,
 				1209152F2935F8D400CF73B3 /* Color+Ext.swift */,
+				12091557293665B800CF73B3 /* CKRecord+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				120915532936602600CF73B3 /* CloudKitManager.swift in Sources */,
 				120915442936279600CF73B3 /* DDGButton.swift in Sources */,
 				120915382935F9E300CF73B3 /* ProfileView.swift in Sources */,
+				12091558293665B800CF73B3 /* CKRecord+Ext.swift in Sources */,
 				120915302935F8D400CF73B3 /* Color+Ext.swift in Sources */,
 				1209154F2936513400CF73B3 /* DDGProfile.swift in Sources */,
 				1209154D2936496300CF73B3 /* DDGLocation.swift in Sources */,
