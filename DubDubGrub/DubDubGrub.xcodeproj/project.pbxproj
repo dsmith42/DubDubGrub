@@ -18,6 +18,8 @@
 		1209153A2936047F00CF73B3 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915392936047F00CF73B3 /* LocationDetailView.swift */; };
 		1209153C2936216200CF73B3 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209153B2936216200CF73B3 /* AvatarView.swift */; };
 		1209153E2936218D00CF73B3 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209153D2936218D00CF73B3 /* LocationCell.swift */; };
+		120915402936244000CF73B3 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209153F2936244000CF73B3 /* CustomModifiers.swift */; };
+		12091542293624A300CF73B3 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12091541293624A300CF73B3 /* View+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		120915392936047F00CF73B3 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		1209153B2936216200CF73B3 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		1209153D2936218D00CF73B3 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		1209153F2936244000CF73B3 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		12091541293624A300CF73B3 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 		1209151F2935F51D00CF73B3 /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				1209153F2936244000CF73B3 /* CustomModifiers.swift */,
+				12091541293624A300CF73B3 /* View+Ext.swift */,
 				1209152E2935F5D300CF73B3 /* DubDubGrub.entitlements */,
 				120915202935F51D00CF73B3 /* DubDubGrubApp.swift */,
 				120915242935F51E00CF73B3 /* Assets.xcassets */,
@@ -161,11 +167,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				120915212935F51D00CF73B3 /* DubDubGrubApp.swift in Sources */,
+				120915402936244000CF73B3 /* CustomModifiers.swift in Sources */,
 				120915342935F9AA00CF73B3 /* LocationMapView.swift in Sources */,
 				120915362935F9C800CF73B3 /* LocationListView.swift in Sources */,
 				1209153A2936047F00CF73B3 /* LocationDetailView.swift in Sources */,
 				120915322935F96E00CF73B3 /* AppTabView.swift in Sources */,
 				1209153C2936216200CF73B3 /* AvatarView.swift in Sources */,
+				12091542293624A300CF73B3 /* View+Ext.swift in Sources */,
 				1209153E2936218D00CF73B3 /* LocationCell.swift in Sources */,
 				120915382935F9E300CF73B3 /* ProfileView.swift in Sources */,
 				120915302935F8D400CF73B3 /* Color+Ext.swift in Sources */,
