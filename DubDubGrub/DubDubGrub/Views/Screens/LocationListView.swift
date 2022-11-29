@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LocationListView: View {
 	@State private var locations: [DDGLocation] = [DDGLocation(record: MockData.location)]
+	@State private var alertItem: AlertItem?
 
 	var body: some View {
 		NavigationView {
@@ -21,16 +22,8 @@ struct LocationListView: View {
 			}
 			.listStyle(PlainListStyle())
 			.navigationTitle("Grub Spots")
-		}
-		.onAppear {
-			CloudKitManager.getLocations { result in
-				switch result {
-				case let .success(locations):
-					print(locations)
-
-				case let .failure(error):
-					print(error)
-				}
+			.alert(item: $alertItem) { alertItem in
+				Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
 			}
 		}
 	}
