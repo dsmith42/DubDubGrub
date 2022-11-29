@@ -40,18 +40,7 @@ struct ProfileView: View {
 				}
 
 				VStack(alignment: .leading, spacing: 8) {
-					Text("Bio: ")
-						.font(.callout)
-						.foregroundColor(.secondary)
-					+
-					Text("\(100 - bio.count)")
-						.font(.callout)
-						.bold()
-						.foregroundColor(bio.count <= 100 ? .brandPrimary : .grubRed)
-					+
-					Text(" Characters Remain")
-						.font(.callout)
-						.foregroundColor(.secondary)
+					CharactersRemainingView(currentCount: bio.count)
 
 					TextEditor(text: $bio)
 						.frame(height: 100)
@@ -65,12 +54,7 @@ struct ProfileView: View {
 				Button {
 
 				} label: {
-					Text("Create Profile")
-						.bold()
-						.frame(width: 280, height: 44)
-						.background(Color.brandPrimary)
-						.foregroundColor(.white)
-						.cornerRadius(8)
+						DDGButton(title: "Create Profile")
 				}
 				.padding()
 
@@ -105,5 +89,24 @@ struct EditImage: View {
 			.frame(width: 14, height: 14)
 			.foregroundColor(.white)
 			.offset(y: 32)
+	}
+}
+
+struct CharactersRemainingView: View {
+	var currentCount: Int
+
+	var body: some View {
+		Text("Bio: ")
+			.font(.callout)
+			.foregroundColor(.secondary)
+		+
+		Text("\(100 - currentCount)")
+			.font(.callout)
+			.bold()
+			.foregroundColor(currentCount <= 100 ? .brandPrimary : .grubRed)
+		+
+		Text(" Characters Remain")
+			.font(.callout)
+			.foregroundColor(.secondary)
 	}
 }
