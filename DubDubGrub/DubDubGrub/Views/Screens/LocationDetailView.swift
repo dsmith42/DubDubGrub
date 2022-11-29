@@ -35,7 +35,7 @@ struct LocationDetailView: View {
 					.foregroundColor(Color(uiColor: .secondarySystemBackground))
 					.padding(.horizontal)
 				
-				HStack(spacing: 16) {
+				HStack(spacing: 20) {
 					Button {
 						
 					} label: {
