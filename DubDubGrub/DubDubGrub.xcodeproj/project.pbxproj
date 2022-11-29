@@ -28,6 +28,7 @@
 		120915562936617A00CF73B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915552936617A00CF73B3 /* Constants.swift */; };
 		12091558293665B800CF73B3 /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12091557293665B800CF73B3 /* CKRecord+Ext.swift */; };
 		1209155A293666D200CF73B3 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12091559293666D200CF73B3 /* AlertItem.swift */; };
+		1209155D29366BE100CF73B3 /* LocationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209155C29366BE100CF73B3 /* LocationMapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		120915552936617A00CF73B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		12091557293665B800CF73B3 /* CKRecord+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
 		12091559293666D200CF73B3 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		1209155C29366BE100CF73B3 /* LocationMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				120915312935F96E00CF73B3 /* AppTabView.swift */,
-				120915332935F9AA00CF73B3 /* LocationMapView.swift */,
+				1209155B29366BCF00CF73B3 /* LocationMapView */,
 				120915352935F9C800CF73B3 /* LocationListView.swift */,
 				120915392936047F00CF73B3 /* LocationDetailView.swift */,
 				120915372935F9E300CF73B3 /* ProfileView.swift */,
@@ -182,6 +184,15 @@
 				12091559293666D200CF73B3 /* AlertItem.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1209155B29366BCF00CF73B3 /* LocationMapView */ = {
+			isa = PBXGroup;
+			children = (
+				120915332935F9AA00CF73B3 /* LocationMapView.swift */,
+				1209155C29366BE100CF73B3 /* LocationMapViewModel.swift */,
+			);
+			path = LocationMapView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 				120915562936617A00CF73B3 /* Constants.swift in Sources */,
 				120915402936244000CF73B3 /* CustomModifiers.swift in Sources */,
 				120915342935F9AA00CF73B3 /* LocationMapView.swift in Sources */,
+				1209155D29366BE100CF73B3 /* LocationMapViewModel.swift in Sources */,
 				120915362935F9C800CF73B3 /* LocationListView.swift in Sources */,
 				120915512936537100CF73B3 /* MockData.swift in Sources */,
 				1209153A2936047F00CF73B3 /* LocationDetailView.swift in Sources */,
