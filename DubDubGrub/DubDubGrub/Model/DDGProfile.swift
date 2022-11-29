@@ -1,5 +1,5 @@
 //
-//  DGGProfile.swift
+//  DDGProfile.swift
 //  DubDubGrub
 //
 //  Created by Dan Smith on 29/11/2022.
@@ -7,7 +7,7 @@
 
 import CloudKit
 
-struct DGGProfile {
+struct DDGProfile {
 	static let kFirstName = "firstName"
 	static let kLastName = "lastName"
 	static let kCompanyName = "companyName"
@@ -24,9 +24,9 @@ struct DGGProfile {
 
 	init(record: CKRecord) {
 		ckRecordID = record.recordID
-		firstName = record[DGGProfile.kFirstName] as? String ?? "N/A"
-		lastName = record[DGGProfile.kLastName] as? String ?? "N/A"
-		bio = record[DGGProfile.kBio] as? String ?? "N/A"
-		avatar = record[DGGProfile.kAvatar] as? CKAsset
+		firstName = record[DDGProfile.kFirstName] as? String ?? "N/A"
+		lastName = record[DDGProfile.kLastName] as? String ?? "N/A"
+		bio = record[DDGProfile.kBio] as? String ?? "N/A"
+		avatar = record[DDGProfile.kAvatar] as? CKAsset
 	}
 }

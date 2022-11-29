@@ -1,5 +1,5 @@
 //
-//  DGGLocation.swift
+//  DDGLocation.swift
 //  DubDubGrub
 //
 //  Created by Dan Smith on 29/11/2022.
@@ -7,7 +7,7 @@
 
 import CloudKit
 
-struct DGGLocation {
+struct DDGLocation {
 	static let kName = "name"
 	static let kAddress = "address"
 	static let kDescription = "description"
@@ -29,13 +29,13 @@ struct DGGLocation {
 
 	init(record: CKRecord) {
 		ckRecordID = record.recordID
-		name = record[DGGLocation.kName] as? String ?? "N/A"
-		address = record[DGGLocation.kAddress] as? String ?? "N/A"
-		description = record[DGGLocation.kDescription] as? String ?? "N/A"
-		phoneNumber = record[DGGLocation.kPhoneNumber] as? String ?? "N/A"
-		location = record[DGGLocation.kLocation] as? CLLocation ?? CLLocation(latitude: 0, longitude: 0)
-		websiteURL = record[DGGLocation.kWebsiteURL] as? String ?? "N/A"
-		squareAsset = record[DGGLocation.kSquareAsset] as? CKAsset
-		bannerAsset = record[DGGLocation.kBannerAsset] as? CKAsset
+		name = record[DDGLocation.kName] as? String ?? "N/A"
+		address = record[DDGLocation.kAddress] as? String ?? "N/A"
+		description = record[DDGLocation.kDescription] as? String ?? "N/A"
+		phoneNumber = record[DDGLocation.kPhoneNumber] as? String ?? "N/A"
+		location = record[DDGLocation.kLocation] as? CLLocation ?? CLLocation(latitude: 0, longitude: 0)
+		websiteURL = record[DDGLocation.kWebsiteURL] as? String ?? "N/A"
+		squareAsset = record[DDGLocation.kSquareAsset] as? CKAsset
+		bannerAsset = record[DDGLocation.kBannerAsset] as? CKAsset
 	}
 }
