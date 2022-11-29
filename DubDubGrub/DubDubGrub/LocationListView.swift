@@ -12,31 +12,8 @@ struct LocationListView: View {
 		NavigationView {
 			List {
 				ForEach(0..<10) { item in
-					HStack {
-						Image("default-square-asset")
-							.resizable()
-							.scaledToFit()
-							.frame(height: 80)
-							.clipShape(Circle())
-							.padding(.vertical, 8)
-
-						VStack(alignment: .leading) {
-							Text("Test Location Name")
-								.font(.title2)
-								.fontWeight(.semibold)
-								.lineLimit(1)
-								.minimumScaleFactor(0.75)
-
-							HStack {
-								AvatarView()
-								AvatarView()
-								AvatarView()
-								AvatarView()
-								AvatarView()
-							}
-
-						}
-						.padding(.leading)
+					NavigationLink(destination: LocationDetailView()) {
+						LocationCell()
 					}
 				}
 			}
@@ -53,11 +30,45 @@ struct LocationListView_Previews: PreviewProvider {
 }
 
 struct AvatarView: View {
+	var size: CGFloat = 35
+
 	var body: some View {
 		Image("default-avatar")
 			.resizable()
 			.scaledToFit()
-			.frame(height: 35)
+			.frame(width: size, height: size)
 			.clipShape(Circle())
+	}
+}
+
+struct LocationCell: View {
+	var body: some View {
+		HStack {
+			Image("default-square-asset")
+				.resizable()
+				.scaledToFit()
+				.frame(height: 80)
+				.clipShape(Circle())
+				.padding(.vertical, 8)
+
+			VStack(alignment: .leading) {
+				Text("Test Location Name")
+					.font(.title2)
+					.fontWeight(.semibold)
+					.lineLimit(1)
+					.minimumScaleFactor(0.75)
+					.fixedSize(horizontal: true, vertical: false)
+
+				HStack {
+					AvatarView()
+					AvatarView()
+					AvatarView()
+					AvatarView()
+					AvatarView()
+				}
+
+			}
+			.padding(.leading)
+		}
 	}
 }
