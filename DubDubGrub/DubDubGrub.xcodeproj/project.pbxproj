@@ -72,21 +72,12 @@
 		1209151F2935F51D00CF73B3 /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
-				1209153F2936244000CF73B3 /* CustomModifiers.swift */,
-				12091541293624A300CF73B3 /* View+Ext.swift */,
+				120915452936294800CF73B3 /* Extensions */,
+				120915462936295900CF73B3 /* Views */,
 				1209152E2935F5D300CF73B3 /* DubDubGrub.entitlements */,
 				120915202935F51D00CF73B3 /* DubDubGrubApp.swift */,
 				120915242935F51E00CF73B3 /* Assets.xcassets */,
 				120915262935F51E00CF73B3 /* Preview Content */,
-				1209152F2935F8D400CF73B3 /* Color+Ext.swift */,
-				120915312935F96E00CF73B3 /* AppTabView.swift */,
-				120915332935F9AA00CF73B3 /* LocationMapView.swift */,
-				120915352935F9C800CF73B3 /* LocationListView.swift */,
-				1209153D2936218D00CF73B3 /* LocationCell.swift */,
-				1209153B2936216200CF73B3 /* AvatarView.swift */,
-				120915392936047F00CF73B3 /* LocationDetailView.swift */,
-				120915372935F9E300CF73B3 /* ProfileView.swift */,
-				120915432936279600CF73B3 /* DDGButton.swift */,
 			);
 			path = DubDubGrub;
 			sourceTree = "<group>";
@@ -97,6 +88,63 @@
 				120915272935F51E00CF73B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		120915452936294800CF73B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12091541293624A300CF73B3 /* View+Ext.swift */,
+				1209152F2935F8D400CF73B3 /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		120915462936295900CF73B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				120915482936299000CF73B3 /* Cells */,
+				120915492936299D00CF73B3 /* CustomViews */,
+				1209154A293629DA00CF73B3 /* CustomModifiers */,
+				120915472936296300CF73B3 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		120915472936296300CF73B3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				120915312935F96E00CF73B3 /* AppTabView.swift */,
+				120915332935F9AA00CF73B3 /* LocationMapView.swift */,
+				120915352935F9C800CF73B3 /* LocationListView.swift */,
+				120915392936047F00CF73B3 /* LocationDetailView.swift */,
+				120915372935F9E300CF73B3 /* ProfileView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		120915482936299000CF73B3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1209153D2936218D00CF73B3 /* LocationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		120915492936299D00CF73B3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1209153B2936216200CF73B3 /* AvatarView.swift */,
+				120915432936279600CF73B3 /* DDGButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		1209154A293629DA00CF73B3 /* CustomModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				1209153F2936244000CF73B3 /* CustomModifiers.swift */,
+			);
+			path = CustomModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
