@@ -60,7 +60,7 @@ struct ProfileView: View {
 					Text("\(100 - bio.count)")
 						.font(.callout)
 						.bold()
-						.foregroundColor(bio.count <= 100 ? .brandPrimary : Color(uiColor: .systemPink))
+						.foregroundColor(bio.count <= 100 ? .brandPrimary : .grubRed)
 					+
 					Text(" Characters Remain")
 						.font(.callout)

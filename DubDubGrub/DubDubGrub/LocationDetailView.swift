@@ -63,7 +63,7 @@ struct LocationDetailView: View {
 						Button {
 
 						} label: {
-							LocationActionButton(imageName: "person.fill.checkmark", color: Color(uiColor: .systemPink))
+							LocationActionButton(imageName: "person.fill.checkmark", color: .brandSecondary)
 						}
 					}
 				}
