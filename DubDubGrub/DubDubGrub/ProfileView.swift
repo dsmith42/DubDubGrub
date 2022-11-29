@@ -74,6 +74,20 @@ struct ProfileView: View {
 				.padding(.horizontal, 20)
 
 				Spacer()
+
+				Button {
+
+				} label: {
+					Text("Create Profile")
+						.bold()
+						.frame(width: 280, height: 44)
+						.background(Color.brandPrimary)
+						.foregroundColor(.white)
+						.cornerRadius(8)
+				}
+				.padding()
+
+
 			}
 			.navigationTitle("Profile")
 		}
