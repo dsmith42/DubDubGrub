@@ -16,6 +16,8 @@
 		120915362935F9C800CF73B3 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915352935F9C800CF73B3 /* LocationListView.swift */; };
 		120915382935F9E300CF73B3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915372935F9E300CF73B3 /* ProfileView.swift */; };
 		1209153A2936047F00CF73B3 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915392936047F00CF73B3 /* LocationDetailView.swift */; };
+		1209153C2936216200CF73B3 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209153B2936216200CF73B3 /* AvatarView.swift */; };
+		1209153E2936218D00CF73B3 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209153D2936218D00CF73B3 /* LocationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		120915352935F9C800CF73B3 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		120915372935F9E300CF73B3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		120915392936047F00CF73B3 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		1209153B2936216200CF73B3 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		1209153D2936218D00CF73B3 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				120915312935F96E00CF73B3 /* AppTabView.swift */,
 				120915332935F9AA00CF73B3 /* LocationMapView.swift */,
 				120915352935F9C800CF73B3 /* LocationListView.swift */,
+				1209153D2936218D00CF73B3 /* LocationCell.swift */,
+				1209153B2936216200CF73B3 /* AvatarView.swift */,
 				120915392936047F00CF73B3 /* LocationDetailView.swift */,
 				120915372935F9E300CF73B3 /* ProfileView.swift */,
 			);
@@ -159,6 +165,8 @@
 				120915362935F9C800CF73B3 /* LocationListView.swift in Sources */,
 				1209153A2936047F00CF73B3 /* LocationDetailView.swift in Sources */,
 				120915322935F96E00CF73B3 /* AppTabView.swift in Sources */,
+				1209153C2936216200CF73B3 /* AvatarView.swift in Sources */,
+				1209153E2936218D00CF73B3 /* LocationCell.swift in Sources */,
 				120915382935F9E300CF73B3 /* ProfileView.swift in Sources */,
 				120915302935F8D400CF73B3 /* Color+Ext.swift in Sources */,
 			);
