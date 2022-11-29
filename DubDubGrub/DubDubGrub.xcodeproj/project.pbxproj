@@ -23,6 +23,7 @@
 		120915442936279600CF73B3 /* DDGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915432936279600CF73B3 /* DDGButton.swift */; };
 		1209154D2936496300CF73B3 /* DGGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209154C2936496300CF73B3 /* DGGLocation.swift */; };
 		1209154F2936513400CF73B3 /* DGGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209154E2936513400CF73B3 /* DGGProfile.swift */; };
+		120915512936537100CF73B3 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915502936537100CF73B3 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		120915432936279600CF73B3 /* DDGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGButton.swift; sourceTree = "<group>"; };
 		1209154C2936496300CF73B3 /* DGGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGGLocation.swift; sourceTree = "<group>"; };
 		1209154E2936513400CF73B3 /* DGGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGGProfile.swift; sourceTree = "<group>"; };
+		120915502936537100CF73B3 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			children = (
 				1209154C2936496300CF73B3 /* DGGLocation.swift */,
 				1209154E2936513400CF73B3 /* DGGProfile.swift */,
+				120915502936537100CF73B3 /* MockData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				120915402936244000CF73B3 /* CustomModifiers.swift in Sources */,
 				120915342935F9AA00CF73B3 /* LocationMapView.swift in Sources */,
 				120915362935F9C800CF73B3 /* LocationListView.swift in Sources */,
+				120915512936537100CF73B3 /* MockData.swift in Sources */,
 				1209153A2936047F00CF73B3 /* LocationDetailView.swift in Sources */,
 				120915322935F96E00CF73B3 /* AppTabView.swift in Sources */,
 				1209153C2936216200CF73B3 /* AvatarView.swift in Sources */,

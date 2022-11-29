@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct LocationListView: View {
-    var body: some View {
+	@State private var locations: [DGGLocation] = [DGGLocation(record: MockData.location)]
+
+	var body: some View {
 		NavigationView {
 			List {
-				ForEach(0..<10) { item in
-					NavigationLink(destination: LocationDetailView()) {
-						LocationCell()
+				ForEach(locations, id: \.ckRecordID) { location in
+					NavigationLink(destination: LocationDetailView(location: location)) {
+						LocationCell(location: location)
 					}
 				}
 			}
@@ -24,7 +26,7 @@ struct LocationListView: View {
 }
 
 struct LocationListView_Previews: PreviewProvider {
-    static var previews: some View {
-        LocationListView()
-    }
+	static var previews: some View {
+		LocationListView()
+	}
 }
