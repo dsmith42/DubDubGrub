@@ -20,14 +20,16 @@ extension LocationMapView {
 
 		@Published var locations:[DDGLocation] = []
 
-		func getLocations() {
+		func getLocations(for locationManager: LocationManager) {
 			CloudKitManager.getLocations { [self] result in
-				switch result {
-				case let .success(locations):
-					self.locations = locations
+				DispatchQueue.main.async { [self] in
+					switch result {
+					case let .success(locations):
+						locationManager.locations = locations
 
-				case .failure:
-					alertItem = AlertContext.unableToGetLocations
+					case .failure:
+						self.alertItem = AlertContext.unableToGetLocations
+					}
 				}
 			}
 		}
