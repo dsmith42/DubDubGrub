@@ -76,7 +76,6 @@
 		120915142935F51D00CF73B3 = {
 			isa = PBXGroup;
 			children = (
-				120915612937739A00CF73B3 /* CKAsset+Ext.swift */,
 				1209151F2935F51D00CF73B3 /* DubDubGrub */,
 				1209151E2935F51D00CF73B3 /* Products */,
 			);
@@ -116,9 +115,10 @@
 		120915452936294800CF73B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				12091541293624A300CF73B3 /* View+Ext.swift */,
-				1209152F2935F8D400CF73B3 /* Color+Ext.swift */,
+				120915612937739A00CF73B3 /* CKAsset+Ext.swift */,
 				12091557293665B800CF73B3 /* CKRecord+Ext.swift */,
+				1209152F2935F8D400CF73B3 /* Color+Ext.swift */,
+				12091541293624A300CF73B3 /* View+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -433,6 +433,7 @@
 				DEVELOPMENT_TEAM = X6M775UK8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Dub Dub Grub uses your location to see where you arein relation to your friends and food.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,6 +464,7 @@
 				DEVELOPMENT_TEAM = X6M775UK8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Dub Dub Grub uses your location to see where you arein relation to your friends and food.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
