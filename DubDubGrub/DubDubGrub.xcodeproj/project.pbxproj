@@ -30,6 +30,7 @@
 		1209155A293666D200CF73B3 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12091559293666D200CF73B3 /* AlertItem.swift */; };
 		1209155D29366BE100CF73B3 /* LocationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209155C29366BE100CF73B3 /* LocationMapViewModel.swift */; };
 		120915602937660300CF73B3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209155F2937660300CF73B3 /* LocationManager.swift */; };
+		120915622937739A00CF73B3 /* CKAsset+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120915612937739A00CF73B3 /* CKAsset+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		12091559293666D200CF73B3 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		1209155C29366BE100CF73B3 /* LocationMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewModel.swift; sourceTree = "<group>"; };
 		1209155F2937660300CF73B3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		120915612937739A00CF73B3 /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		120915142935F51D00CF73B3 = {
 			isa = PBXGroup;
 			children = (
+				120915612937739A00CF73B3 /* CKAsset+Ext.swift */,
 				1209151F2935F51D00CF73B3 /* DubDubGrub */,
 				1209151E2935F51D00CF73B3 /* Products */,
 			);
@@ -294,6 +297,7 @@
 				120915382935F9E300CF73B3 /* ProfileView.swift in Sources */,
 				12091558293665B800CF73B3 /* CKRecord+Ext.swift in Sources */,
 				120915602937660300CF73B3 /* LocationManager.swift in Sources */,
+				120915622937739A00CF73B3 /* CKAsset+Ext.swift in Sources */,
 				120915302935F8D400CF73B3 /* Color+Ext.swift in Sources */,
 				1209154F2936513400CF73B3 /* DDGProfile.swift in Sources */,
 				1209154D2936496300CF73B3 /* DDGLocation.swift in Sources */,

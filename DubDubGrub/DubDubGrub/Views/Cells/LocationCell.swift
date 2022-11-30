@@ -15,7 +15,7 @@ struct LocationCell: View {
 			Image("default-square-asset")
 				.resizable()
 				.scaledToFit()
-				.frame(height: 80)
+				.frame(width: 80, height: 80)
 				.clipShape(Circle())
 				.padding(.vertical, 8)
 
@@ -24,8 +24,9 @@ struct LocationCell: View {
 					.font(.title2)
 					.fontWeight(.semibold)
 					.lineLimit(1)
+					.truncationMode(.tail)
 					.minimumScaleFactor(0.75)
-					.fixedSize(horizontal: true, vertical: false)
+//					.fixedSize(horizontal: true, vertical: false)
 
 				HStack {
 					AvatarView()
