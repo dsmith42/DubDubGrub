@@ -10,19 +10,15 @@ import MapKit
 
 struct LocationMapView: View {
 	@EnvironmentObject private var locationManager: LocationManager
-	@State private var viewModel = LocationMapViewModel()
+	@StateObject private var viewModel = LocationMapViewModel()
 
 	var body: some View {
 		ZStack {
-			Map(
-				coordinateRegion: $viewModel.region,
-				showsUserLocation: true,
-				annotationItems: locationManager.locations) { location in
-					MapMarker(coordinate: location.location.coordinate, tint: .brandPrimary)
-				}
-				.accentColor(.grubRed)
-				.ignoresSafeArea()
-
+			Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: locationManager.locations) { location in
+				MapMarker(coordinate: location.location.coordinate, tint: .brandPrimary)
+			}
+			.accentColor(.grubRed)
+			.ignoresSafeArea()
 
 			VStack {
 				LogoView(frameWidth: 125)
@@ -30,13 +26,18 @@ struct LocationMapView: View {
 				Spacer()
 			}
 		}
+		.sheet(isPresented: $viewModel.isShowingOnboardView, onDismiss: viewModel.checkIfLocationServicesAreEnabled) {
+			OnboardView(isShowingOnboardView: $viewModel.isShowingOnboardView)
+		}
 		.alert(item: $viewModel.alertItem, content: { alertItem in
 			Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
 		})
 		.onAppear {
-			viewModel.getLocations(for: locationManager)
+			viewModel.runStartupChecks()
 
-			viewModel.checkIfLocationServicesAreEnabled()
+			if locationManager.locations.isEmpty {
+				viewModel.getLocations(for: locationManager)
+			}
 		}
 	}
 }

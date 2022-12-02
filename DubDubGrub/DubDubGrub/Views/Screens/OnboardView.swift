@@ -8,46 +8,50 @@
 import SwiftUI
 
 struct OnboardView: View {
-    var body: some View {
-			VStack {
-				HStack {
-					Spacer()
-					Button {
 
-					} label: {
-						XDismissButton()
-					}
-				}
+	@Binding var isShowingOnboardView: Bool
 
+	var body: some View {
+		VStack {
+			HStack {
 				Spacer()
-
-				LogoView(frameWidth: 250)
-					.padding(.bottom)
-
-				VStack(alignment: .leading, spacing: 32) {
-					OnboardInfoView(imageName: "building.2.crop.circle",
-													title: "Restaurant Locations",
-													description: "Find places to dine around the convention center")
-
-					OnboardInfoView(imageName: "checkmark.circle",
-													title: "Check In",
-													description: "Let iOS Devs know where you are")
-
-					OnboardInfoView(imageName: "person.2.circle",
-													title: "Find Friends",
-													description: "See where other iOS Devs are and join the party")
+				Button {
+					isShowingOnboardView = false
+				} label: {
+					XDismissButton()
 				}
-				.padding(.horizontal, 40)
-
-				Spacer()
+				.padding()
 			}
+
+			Spacer()
+
+			LogoView(frameWidth: 250)
+				.padding(.bottom)
+
+			VStack(alignment: .leading, spacing: 32) {
+				OnboardInfoView(imageName: "building.2.crop.circle",
+												title: "Restaurant Locations",
+												description: "Find places to dine around the convention center")
+
+				OnboardInfoView(imageName: "checkmark.circle",
+												title: "Check In",
+												description: "Let iOS Devs know where you are")
+
+				OnboardInfoView(imageName: "person.2.circle",
+												title: "Find Friends",
+												description: "See where other iOS Devs are and join the party")
+			}
+			.padding(.horizontal, 40)
+
+			Spacer()
 		}
+	}
 }
 
 struct OnboardView_Previews: PreviewProvider {
-    static var previews: some View {
-        OnboardView()
-    }
+	static var previews: some View {
+		OnboardView(isShowingOnboardView: .constant(true))
+	}
 }
 
 struct OnboardInfoView: View {

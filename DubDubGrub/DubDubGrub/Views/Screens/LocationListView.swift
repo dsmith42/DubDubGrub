@@ -22,9 +22,6 @@ struct LocationListView: View {
 			}
 			.listStyle(PlainListStyle())
 			.navigationTitle("Grub Spots")
-			.alert(item: $alertItem) { alertItem in
-				Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
-			}
 		}
 	}
 }
